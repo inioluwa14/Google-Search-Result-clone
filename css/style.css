@@ -1,0 +1,427 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* padding: 0; */
+}
+html,
+body,
+h1,
+input,
+select {
+  font-family: 'Roboto';
+  /* font-family: arial, sans-serif; */
+}
+body a{
+  color: rgb(113, 181, 208);
+  text-decoration: none;
+}
+body a:hover{
+  text-decoration: underline;
+}
+a:active{
+  color:none;
+}
+body {
+  /* background-color: rgb(56, 50, 50); */
+  color: #bdc1c6;
+  font-size: 14px;
+  background: #202124;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  position: sticky;
+  top: 10px;
+}
+/* .nav .google{
+    display: flex;
+} */
+.nav .nav-search {
+  margin-left: -250px;
+}
+.nav-search .input-holder {
+  display: flex;
+  position: relative;
+}
+.nav-search .input-holder input {
+  background: #303134;
+  color: white;
+  font-size: 16px;
+  height: 44px;
+  border: 0;
+  outline: 0;
+  border-radius: 24px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.nav-search .input-holder input:hover {
+  box-shadow: 0 1px 4px rgb(22, 22, 22);
+}
+.nav-search .input-holder input::placeholder {
+  color: white;
+  font-size: 16px;
+}
+.nav-search .input-holder .icons {
+  top: 10px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-search .input-holder .icons img {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+.nav .nav-account {
+  display: flex;
+  /* justify-content: space-around; */
+}
+.nav .nav-account i {
+  font-size: 20px;
+  margin-right: 30px;
+}
+.nav .nav-account img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.navhead .nav-half {
+  width: 50%;
+  margin-left: 150px;
+}
+.navhead .list {
+  display: flex;
+  justify-content: space-between;
+}
+.navhead .list .option {
+  list-style-type: none;
+  display: flex;
+}
+.navhead .list .option li {
+  margin-right: 20px;
+}
+.navhead .list a {
+  text-decoration: none;
+  color: #bdc1c6;
+}
+.navhead .list .tools a:hover {
+  background: #303134;
+  border: 1px solid #bdc1c6;
+  padding: 5px;
+  border-radius: 3px;
+}
+.navhead .list .tools a:active{
+  color: aquamarine;
+}
+.navhead .nav-half .overview {
+  margin: 25px 0;
+  margin-left: 40px;
+}
+.nav-half .overview p {
+  margin-bottom: 25px;
+}
+.nav-half .overview .more {
+  display: flex;
+}
+.nav-half .overview .hero-overview {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.nav-half .overview .hero-overview li {
+  margin-right: 10px;
+}
+.nav-half .overview .hero-overview a {
+  background: #46474c;
+  border: 1px solid #bdc1c6;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: 0;
+  text-decoration: none;
+  color: white;
+}
+.messi-overview {
+  width: 75%;
+  margin: auto;
+  /* margin-left: 40px; */
+  display: flex;
+}
+.messi-overview .main-page {
+  /* border-right: 1px solid #5f6368; */
+  margin-top: 20px;
+  /* padding-right: 20px; */
+}
+.messi-overview .main-page .gallery {
+  margin-bottom: 20px;
+}
+.messi-overview .about {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 30%;
+  line-height: 2em;
+}
+/* .messi-overview .about a {
+  text-decoration: none;
+  color: #1a0dab;
+} */
+.messi-overview .about #panel {
+  border: 1px solid #bdc1c6;
+  width: 250px;
+  margin-top: 10px;
+  /* margin-bottom: 0; */
+  /* margin-right: 35px; */
+  text-align: center;
+  border-radius: 50px;
+}
+.messi-overview .main-page .stories{
+  display: flex;
+  margin-top: 20px;
+}
+.messi-overview .main-page .stories .first-story{
+  /* width: 50%; */
+  margin-right: 20px;
+ 
+}
+.messi-overview .story-img{
+  border-radius: 10px;
+}
+.messi-overview .main-page .stories .side-stories{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.messi-overview .main-page .second-story{
+  display: flex;
+  margin: 10px;
+  margin-left: 0;
+}
+.messi-overview .main-page .link-title{
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 1.5em;
+}
+.messi-overview .main-page .link-title:hover{
+  text-decoration: underline;
+}
+.messi-overview .main-page .text-title{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.messi-overview .main-page .otherNews{
+  display: flex;
+  /* width: 50%; */
+}
+.messi-overview .main-page .menu .text{
+  line-height: 20px;
+  margin: 3px 0;
+  font-size: 1rem;
+  font-weight: 300;
+  height: 0;
+  opacity: 0
+}
+.messi-overview .main-page .menu .item:target .text{
+  opacity: 1;
+  height: auto;
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.messi-overview .main-page .menu p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.messi-overview .search-results{
+  display: flex;
+  margin: 30px 0;
+}
+.messi-overview .search-results small{
+  font-size: 12px;
+  color: #bdc1c6;
+}
+.messi-overview .search-results small:hover{
+  text-decoration: none;
+}
+.messi-overview .search-results a{
+  line-height: 25px;
+  font-size: 18px;
+  
+}
+.messi-overview .search-video{
+  display: flex;
+  font-size: 15px;
+}
+.messi-overview .search-video .video iframe{
+  border-radius: 10px;
+  margin-right: 30px;
+  width: 150px;
+  height: 100px;
+}
+.messi-overview .search-video span:hover{
+  text-decoration: none;
+}
+/* .messi-overview .search-results a:hover{
+  text-decoration: none;
+} */
+.messi-overview .more-search{
+  margin: 50px 0;
+}
+.messi-overview .more-search a{
+  color: #bdc1c6;
+}
+.messi-overview .more-search button{
+  text-align: center;
+  cursor: pointer;
+  /* vertical-align: center; */
+  margin-top: 15px; 
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #303134; 
+  border: 0; 
+  width: 300px; 
+  height: 40px; 
+  border-radius: 50px;
+}
+.messi-overview .more-search i{
+  color:#bdc1c6; 
+  /* padding-right: 50px;  */
+  font-size: 15px;
+}
+.messi-overview .navigation{
+  display: flex;
+  justify-content: center;
+}
+.messi-overview .num-links{
+  margin-left: 30px;
+  /* text-align: center; */
+  letter-spacing: 3px;
+}
+.messi-overview h1{
+  text-align: center;
+  font-size: 30px;
+}
+.messi-overview .num-links a{
+  /* letter-spacing: 2.5px; */
+}
+.messi-overview .num-links .active{
+  color: skyblue;
+}
+.messi-overview .navigation .next{
+  line-height: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.messi-overview .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  /* max-width: 160px; */
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {background-color: #ddd;} */
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* .show {display:block;} */
+
+.about .media{
+  display: flex;
+  justify-content: space-around;
+}
+.about .media .social{
+  margin-top: 10px;
+}
+.about .media img{
+ margin-left: 15px;
+  /* margin: 0 10px; */
+}
+.about .stats{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.about .t-stats {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.about .t-stats tr td{
+  /* border: 1px solid black; */
+  /* border: 1px solid white; */
+  padding: 10px;
+  border-bottom:1px solid #5f6368;
+}
+.about .people{
+  display: flex;
+  /* justify-content: space-between; */
+  margin: 10px 0;
+}
+.about .people .person{
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.about .people .person a{
+  color: #bdc1c6;
+}
+.about .people .person:hover{
+  text-decoration: underline;
+}
+.about .people img{
+
+  border-radius: 10px;
+ /* margin-left: 15px; */
+  /* margin: 0 10px; */
+}
+
+.location{
+  background-color: #171717;
+  line-height: 40px;
+  padding-bottom: 12px;
+  margin-top: 50px;
+}
+.location .first{
+  margin-left: 150px;
+  padding: 10px;
+}
+.location .first #ng{
+  border-right: 1px solid #5f6368;
+  padding-right: 10px;
+}
+.location .first #location:hover{
+  text-decoration: none;
+  /* padding-left: 10px; */
+}
+
+.location .first #location #diff-color{
+  color: #bdc1c6;
+  font-weight: bold;
+}
+.location .first #location #diff-color img{
+  /* margin-top: -1000px; */
+  /* font-size: 50px; */
+  
+}
+.location .footer-nav .footer-list{
+  margin-left: 90px;
+  list-style-type: none;
+  display: flex;
+}
+.location .footer-nav .footer-list li{
+  margin-left: 30px;
+}
